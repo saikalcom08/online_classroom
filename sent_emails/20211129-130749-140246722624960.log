@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: saikalcom08@gmail.com
+Date: Mon, 29 Nov 2021 13:07:49 -0000
+Message-ID: <163819126921.37976.3887804490947373827@saikal-760XBE>
+
+Someone asked for password reset for email saikalcom08@gmail.com.Follow the Link below
+http://localhost:8000{% url "authapp:password_reset_confirm"
+uidb64=uid token=token %}
+-------------------------------------------------------------------------------
