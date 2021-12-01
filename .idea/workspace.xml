@@ -14,32 +14,12 @@
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/starry-night-sky-stars-matterhorn-wallpaper-preview.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f_4civ96k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/download.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/download_Ams5dAY.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_1YVwpWU.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_2Hug0Lb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_UdNkMd0.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_W2CSOYP.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_hFwIPAj.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_rcAqkMn.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_uErmdWS.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_yjfo152.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/starry-night-sky-stars-matterhorn-wallpaper-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/media/images/kyrgyz_til.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/media/images/math.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/media/images/rodinovedenie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/migrations/0002_course.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/create-courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/delete-courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/detail-courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/icons/delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/icons/pencil-fill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/courses/update-courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/student/student_main_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/kyrgyz_til.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/math.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/270659.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/images_xBBQZg9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/kyrgyz_til.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/math.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/migrations/0003_topic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/topics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
@@ -56,19 +36,15 @@
       <change beforePath="$PROJECT_DIR$/../../lesson/week 11/rest/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/main/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson/week 11/rest/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/authapp/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/authapp/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/authapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/authapp/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/delete-courses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/detail-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/courses/detail-courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/kyrgyz_til.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/math.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/django-girls" beforeDir="false" afterPath="$PROJECT_DIR$/../week 9/django-girls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/django_girls/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week 9/django_girls/main/settings.py" afterDir="false" />

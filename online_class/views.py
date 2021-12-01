@@ -94,7 +94,7 @@ class CourseUpdateView(generic.UpdateView):
 class CourseDeleteView(generic.DeleteView):
     model = Course
     template_name = 'courses/course_confirm_delete.html'
-    success_url = reverse_lazy('online_class:course')
+    success_url = reverse_lazy('online_class:courses')
 
     # def get_success_url(self):
     #     return reverse('dashboard')

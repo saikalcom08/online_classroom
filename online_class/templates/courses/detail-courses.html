@@ -4,8 +4,7 @@
 
 {% block content %}
     <h1>Course details</h1>
-    <p>test {{course}}</p>
-    <p>{{course.name}}</p>
+    <h3 class="text-danger font-italic mt-5">{{course.name}}</h3>
     <p>{{course.description}}</p>
-    <img src="{{courses.image.url}}">
+    <img src="{{course.image.url}}">
 {% endblock content %}
