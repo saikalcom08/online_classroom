@@ -5,7 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm, UsernameField
 from .models import UserRegistrationModel
 from django.contrib.auth.forms import PasswordResetForm
 from django.forms import ModelForm
-from online_class.models import Course
+from online_class.models import Course, Topic
 
 
 class UserRegistration(forms.ModelForm):
@@ -32,4 +32,9 @@ class UserEditForm(forms.ModelForm):
 class CourseForm(ModelForm):
     class Meta:
         model = Course
+        fields = ('name', 'description', 'image')
+
+class TopicForm(ModelForm):
+    class Meta:
+        model = Topic
         fields = ('name', 'description', 'image')

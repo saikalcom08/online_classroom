@@ -14,12 +14,18 @@
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/starry-night-sky-stars-matterhorn-wallpaper-preview.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f_4civ96k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/270659.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/images_xBBQZg9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/kyrgyz_til.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/uploads/math.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/migrations/0003_topic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/270659_mHe6mz0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/4aea50b077371d5f6706_252x350crop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/images_WHG4Ehe.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/starry-night-sky-stars-matterhorn-wallpaper-preview_8KXQPPp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/starry-night-sky-stars-matterhorn-wallpaper-preview_fidKTqp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/starry-night-sky-stars-matterhorn-wallpaper-preview_m1hAkB0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/migrations/0004_auto_20211201_0832.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/create-topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/detail-topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/topic_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_class/templates/topics/update-topics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
@@ -38,13 +44,16 @@
       <change beforePath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/delete-courses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/courses/courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/templates/courses/detail-courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/courses/detail-courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/icons/delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/icons/delete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/icons/pencil-fill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/icons/pencil-fill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/topics/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/topics/topics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/kyrgyz_til.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/math.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/django-girls" beforeDir="false" afterPath="$PROJECT_DIR$/../week 9/django-girls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/django_girls/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week 9/django_girls/main/settings.py" afterDir="false" />
@@ -5117,6 +5126,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/online_class" />
       <recent name="$PROJECT_DIR$/online_class/static/assets/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/online_class/templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

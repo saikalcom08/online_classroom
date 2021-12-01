@@ -16,10 +16,10 @@ class Course(models.Model):
         return self.name
 
 class Topic(models.Model):
-    topic_name = models.CharField(max_length=100)
-    topic_description = models.TextField()
-    topic_image = models.ImageField(upload_to='uploads', blank=True)
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    image = models.ImageField(upload_to='uploads', blank=True)
     course_id = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course_id')
 
     def __str__(self):
-        return self.topic_name
+        return self.name

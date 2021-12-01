@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import edit, dashboard, register, CourseListView, CourseCreateView, CourseDetailView, CourseUpdateView, CourseDeleteView
+from .views import edit, dashboard, register, CourseListView, CourseCreateView, CourseDetailView, CourseUpdateView, \
+    CourseDeleteView, TopicListView, TopicDetailView, TopicCreateView, TopicUpdateView, TopicDeleteView
 from django.urls import reverse_lazy
 from .views import main_page
 from django.contrib.auth.views import (LoginView, LogoutView, PasswordResetDoneView, PasswordResetView,
@@ -36,4 +37,9 @@ urlpatterns = [
     path('courses/detail-courses/<int:pk>/', CourseDetailView.as_view(), name='detail-courses'),
     path('courses/update-courses/<int:pk>/', CourseUpdateView.as_view(template_name='courses/update-courses.html'), name='update-courses'),
     path('courses/delete-courses/<int:pk>/', CourseDeleteView.as_view(), name='delete-courses'),
+    path('topics/', TopicListView.as_view(template_name='topics/topics.html'), name='topics'),
+    path('topics/create-topics/', TopicCreateView.as_view(template_name='topics/create-topics.html'), name='create-topics'),
+    path('topics/detail-topics/<int:pk>/', TopicDetailView.as_view(), name='detail-topics'),
+    path('topics/update-topics/<int:pk>/', TopicUpdateView.as_view(template_name='topics/update-topics.html'), name='update-topics'),
+    path('topics/delete-topics/<int:pk>/', TopicDeleteView.as_view(), name='delete-topics'),
 ]

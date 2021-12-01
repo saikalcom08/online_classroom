@@ -1,10 +1,12 @@
 from django.http import request
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.views.generic import FormView
+
 from .forms import UserRegistration, UserEditForm
 from django.views import generic
-from .models import Course
-from .forms import CourseForm
+from .models import Course, Topic
+from .forms import CourseForm, TopicForm
 from django.urls import reverse_lazy, reverse
 from django.http import Http404
 
@@ -54,7 +56,7 @@ def edit(request):
     }
     return render(request, 'authapp/edit.html', context=context)
 
-
+#COURSE
 class CourseListView(generic.ListView):
     model = Course
     template_name = 'courses/courses.html'
@@ -82,19 +84,46 @@ class CourseUpdateView(generic.UpdateView):
         return reverse_lazy('online_class:detail-courses', kwargs={
             'pk': course_id})
 
-# class CourseDeleteView(generic.DeleteView):
-#     def get_object(self, queryset=None):
-#         """ Hook to ensure object is owned by request.user. """
-#         obj = super(CourseDeleteView, self).get_object()
-#         if not obj.owner == self.request.user:
-#             raise Http404
-#         return obj
-
-
 class CourseDeleteView(generic.DeleteView):
     model = Course
     template_name = 'courses/course_confirm_delete.html'
     success_url = reverse_lazy('online_class:courses')
 
-    # def get_success_url(self):
-    #     return reverse('dashboard')
+# TOPIC
+class TopicListView(generic.ListView):
+    model = Topic
+    template_name = 'topics/topics.html'
+    context_object_name = 'topic'
+
+
+class TopicDetailView(generic.DetailView):
+    model = Topic
+    template_name = 'topics/detail-topics.html'
+    context_object_name = 'topics'
+
+
+class TopicCreateView(generic.CreateView):
+    model = Topic
+    form_class = TopicForm
+    template_name = 'topics/create-topics.html'
+    success_url = reverse_lazy('online_class:topics')
+
+    def form_valid(self, form):
+        form.instance.course_id = self.request.user
+        return super(TopicCreateView, self).form_valid(form)
+
+
+class TopicUpdateView(generic.UpdateView):
+    model = Topic
+    form_class = TopicForm
+    template_name = 'topics/update-topics.html'
+
+    def get_success_url(self):
+        topic_id = self.kwargs['pk']
+        return reverse_lazy('online_class:detail-topics', kwargs={
+            'pk': topic_id})
+
+class TopicDeleteView(generic.DeleteView):
+    model = Topic
+    template_name = 'topics/topic_confirm_delete.html'
+    success_url = reverse_lazy('online_class:topics')
