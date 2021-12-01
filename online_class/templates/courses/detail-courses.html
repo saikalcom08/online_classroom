@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block title %}Detail course{% endblock title %}
+
+{% block content %}
+    <h1>Course details</h1>
+    <p>test {{course}}</p>
+    <p>{{course.name}}</p>
+    <p>{{course.description}}</p>
+    <img src="{{courses.image.url}}">
+{% endblock content %}

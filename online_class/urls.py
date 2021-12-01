@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import edit, dashboard, register
+from .views import edit, dashboard, register, CourseListView, CourseCreateView, CourseDetailView, CourseUpdateView, CourseDeleteView
 from django.urls import reverse_lazy
 from .views import main_page
 from django.contrib.auth.views import (LoginView, LogoutView, PasswordResetDoneView, PasswordResetView,
@@ -31,5 +31,9 @@ urlpatterns = [
         success_url=reverse_lazy('authapp:login')), name='password_reset_confirm'),
     path('reset/done/', PasswordResetCompleteView.as_view(
         template_name='authapp/password_reset_complete.html'), name='password_reset_complete'),
-
+    path('courses/', CourseListView.as_view(template_name='courses/courses.html'), name='courses'),
+    path('courses/create-courses/', CourseCreateView.as_view(template_name='courses/create-courses.html'), name='create-courses'),
+    path('courses/detail-courses/<int:pk>/', CourseDetailView.as_view(), name='detail-courses'),
+    path('courses/update-courses/<int:pk>/', CourseUpdateView.as_view(template_name='courses/update-courses.html'), name='update-courses'),
+    path('courses/delete-courses/<int:pk>/', CourseDeleteView.as_view(), name='delete-courses'),
 ]

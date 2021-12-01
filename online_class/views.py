@@ -2,7 +2,11 @@ from django.http import request
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegistration, UserEditForm
-
+from django.views import generic
+from .models import Course
+from .forms import CourseForm
+from django.urls import reverse_lazy, reverse
+from django.http import Http404
 
 # Create your views here.
 def main_page(request):
@@ -49,3 +53,48 @@ def edit(request):
         'form': user_form,
     }
     return render(request, 'authapp/edit.html', context=context)
+
+
+class CourseListView(generic.ListView):
+    model = Course
+    template_name = 'courses/courses.html'
+    context_object_name = 'course'
+
+
+class CourseDetailView(generic.DetailView):
+    model = Course
+    template_name = 'courses/detail-courses.html'
+    context_object_name = 'course'
+
+
+class CourseCreateView(generic.CreateView):
+    form_class = CourseForm
+    template_name = 'courses/create-courses.html'
+    success_url = reverse_lazy('online_class:courses')
+
+class CourseUpdateView(generic.UpdateView):
+    model = Course
+    form_class = CourseForm
+    template_name = 'courses/update-courses.html'
+
+    def get_success_url(self):
+        course_id = self.kwargs['pk']
+        return reverse_lazy('online_class:detail-courses', kwargs={
+            'pk': course_id})
+
+# class CourseDeleteView(generic.DeleteView):
+#     def get_object(self, queryset=None):
+#         """ Hook to ensure object is owned by request.user. """
+#         obj = super(CourseDeleteView, self).get_object()
+#         if not obj.owner == self.request.user:
+#             raise Http404
+#         return obj
+
+
+class CourseDeleteView(generic.DeleteView):
+    model = Course
+    template_name = 'courses/course_confirm_delete.html'
+    success_url = reverse_lazy('online_class:course')
+
+    # def get_success_url(self):
+    #     return reverse('dashboard')

@@ -4,6 +4,8 @@ from django import forms
 from django.contrib.auth.forms import AuthenticationForm, UsernameField
 from .models import UserRegistrationModel
 from django.contrib.auth.forms import PasswordResetForm
+from django.forms import ModelForm
+from online_class.models import Course
 
 
 class UserRegistration(forms.ModelForm):
@@ -26,3 +28,8 @@ class UserEditForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'email')
+
+class CourseForm(ModelForm):
+    class Meta:
+        model = Course
+        fields = ('name', 'description', 'image')

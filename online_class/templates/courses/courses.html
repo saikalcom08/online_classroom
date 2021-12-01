@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block title %}Courses{% endblock title %}
+
+{% block content %}
+
+<div class="list-group mt-5">
+    <h4>List of courses:</h4>
+    <a href="{% url 'online_class:create-courses' %}" class="btn btn-secondary" role="button">Add Course</a>
+    {%for c in course %}
+        <div class="d-flex flex-row">
+            <a href="{% url 'online_class:detail-courses' pk=c.pk %}" class="list-group-item list-group-item-action">{{c.name}}</a>
+            <a class="btn btn-default" href="{% url 'online_class:update-courses' pk=c.pk %}">
+                        {% include './icons/pencil-fill.svg' %}</a>
+            <a class="btn btn-default" style="width:5px; height:5px" href="{% url 'online_class:delete-courses' pk=c.pk %}">
+                        {% include './icons/delete.svg' %}</a>
+        </div>
+    {%endfor %}
+</div>
+{% endblock content %}

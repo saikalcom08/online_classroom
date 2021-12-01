@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="">Authentication <i class="fas fa-school"></i></a>
+    <a class="navbar-brand" href="">Classroom <i class="fas fa-school"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
                 <a class="nav-link" href="{% url 'online_class:dashboard' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
+                <a class="nav-link" href="{% url 'online_class:courses' %}">Courses</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Groups</a>
@@ -25,7 +25,7 @@
         {% endif %}
         <span>
             {% if request.user.is_authenticated %}
-            <a href="{% url 'online_class:logout' %}" class="btn btn-danger">Logout</a>
+            <a href="{% url 'online_class:main_page' %}" class="btn btn-danger">Logout</a>
             Hello
             @ <i>{{user.username}}</i>
             {% else %}
