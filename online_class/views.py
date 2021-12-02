@@ -5,8 +5,8 @@ from django.views.generic import FormView
 
 from .forms import UserRegistration, UserEditForm
 from django.views import generic
-from .models import Course, Topic
-from .forms import CourseForm, TopicForm
+from .models import Course, Topic, Announcement
+from .forms import CourseForm, TopicForm, AnnouncementForm
 from django.urls import reverse_lazy, reverse
 from django.http import Http404
 
@@ -127,3 +127,14 @@ class TopicDeleteView(generic.DeleteView):
     model = Topic
     template_name = 'topics/topic_confirm_delete.html'
     success_url = reverse_lazy('online_class:topics')
+
+#ANNOUNCEMENT
+class AnnouncementListView(generic.ListView):
+    model = Announcement
+    template_name = 'announcement/announcements.html'
+    context_object_name = 'announcement'
+
+class AnnouncementCreateView(generic.CreateView):
+    form_class = AnnouncementForm
+    template_name = 'announcement/create-announcement.html'
+    success_url = reverse_lazy('online_class:announcements.html')

@@ -25,8 +25,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Groups</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Make an announcement</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="{% url 'online_class:create-announcement' %}"> Make an announcement</a>
             </li>
         </ul>
         {% endif %}

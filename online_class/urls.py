@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import edit, dashboard, register, CourseListView, CourseCreateView, CourseDetailView, CourseUpdateView, \
-    CourseDeleteView, TopicListView, TopicDetailView, TopicCreateView, TopicUpdateView, TopicDeleteView
+    CourseDeleteView, TopicListView, TopicDetailView, TopicCreateView, TopicUpdateView, TopicDeleteView, \
+    AnnouncementListView, AnnouncementCreateView
 from django.urls import reverse_lazy
 from .views import main_page
 from django.contrib.auth.views import (LoginView, LogoutView, PasswordResetDoneView, PasswordResetView,
@@ -29,7 +30,7 @@ urlpatterns = [
         template_name='authapp/password_reset_done.html'), name='password_reset_done'),
     path('reset/<uidb64>/<token>/', PasswordResetConfirmView.as_view(
         template_name='authapp/password_reset_confirm.html',
-        success_url=reverse_lazy('authapp:login')), name='password_reset_confirm'),
+        success_url=reverse_lazy('online_course:login')), name='password_reset_confirm'),
     path('reset/done/', PasswordResetCompleteView.as_view(
         template_name='authapp/password_reset_complete.html'), name='password_reset_complete'),
     path('courses/', CourseListView.as_view(template_name='courses/courses.html'), name='courses'),
@@ -42,4 +43,6 @@ urlpatterns = [
     path('topics/detail-topics/<int:pk>/', TopicDetailView.as_view(), name='detail-topics'),
     path('topics/update-topics/<int:pk>/', TopicUpdateView.as_view(template_name='topics/update-topics.html'), name='update-topics'),
     path('topics/delete-topics/<int:pk>/', TopicDeleteView.as_view(), name='delete-topics'),
+    path('announcement/', AnnouncementListView.as_view(template_name='announcement/announcements.html'), name='announcement'),
+    path('announcement/create-announcement/', AnnouncementCreateView.as_view(template_name='announcement/create-announcement.html'), name='create-announcement'),
 ]

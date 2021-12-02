@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block title %}Announcements{% endblock title %}
+
+{% block content %}
+
+<div class="list-group mt-5">
+    <h4>Announcements:</h4>
+    {%for a in announcement %}
+        {{a.title}}
+    {%endfor %}
+</div>
+{% endblock content %}
