@@ -14,9 +14,7 @@
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/starry-night-sky-stars-matterhorn-wallpaper-preview.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lesson/week 11/rest/media/president_images/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f_4civ96k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/migrations/0005_announcement.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/announcement/announcement.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_class/templates/announcement/create-announcement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/uploads/starry-night-sky-stars-matterhorn-wallpaper-preview_rE0zFZE.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Megacom Python course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
@@ -35,13 +33,14 @@
       <change beforePath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lesson/week 9/django project/books/book_app/templates/detail_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/announcement/announcement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/announcement/announcements.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/announcement/announcements.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/templates/authapp/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/authapp/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/templates/courses/course_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/courses/course_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_class/templates/courses/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/courses/courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_class/templates/topics/topic_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/templates/topics/topic_confirm_delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_class/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_class/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week 9/.gitignore" beforeDir="false" />
@@ -5098,6 +5097,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="21anc7z5RRVgmErSTSzJ2ZvoYnR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -5114,6 +5116,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/online_class/templates/authapp" />
       <recent name="$PROJECT_DIR$/online_class" />
       <recent name="$PROJECT_DIR$/online_class/static/assets/css" />
     </key>
@@ -5142,6 +5145,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

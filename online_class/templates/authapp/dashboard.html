@@ -8,7 +8,11 @@
     <hr>
     <div class="d-flex flex-row">
         <div class="p-2">
-            <h3>Announcements</h3>
+            <h3>Announcements:</h3>
+            {% for announce in announcement %}
+                <a href="{% url 'online_class:announcement' %}">{{announce.title}}</a>
+                <p></p>
+            {% endfor %}
         </div>
         <div class="p-2"></div>
     </div>

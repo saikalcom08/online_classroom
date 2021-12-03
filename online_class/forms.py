@@ -29,17 +29,20 @@ class UserEditForm(forms.ModelForm):
         model = User
         fields = ('first_name', 'last_name', 'email')
 
+
 class CourseForm(ModelForm):
     class Meta:
         model = Course
         fields = ('name', 'description', 'image')
 
+
 class TopicForm(ModelForm):
     class Meta:
         model = Topic
-        fields = ('name', 'description', 'image')
+        fields = '__all__'
+
 
 class AnnouncementForm(ModelForm):
     class Meta:
         model = Announcement
-        fields = ('title', 'description', 'group_class')
+        fields = '__all__'

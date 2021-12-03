@@ -19,7 +19,7 @@ class Topic(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     image = models.ImageField(upload_to='uploads', blank=True)
-    course_id = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course_id')
+    course_id = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course_id', verbose_name='Course name')
 
     def __str__(self):
         return self.name
@@ -30,7 +30,7 @@ class Announcement(models.Model):
     oneC = '1C'
     twoA = '2A'
     twoB = '2B'
-    YEAR_IN_SCHOOL_CHOICES = [
+    CLASS_IN_SCHOOL_CHOICES = [
         (oneA, '1A'),
         (oneB, '1B'),
         (oneC, '1C'),
@@ -43,12 +43,12 @@ class Announcement(models.Model):
     description = models.TextField()
     group_class = models.CharField(
         max_length=2,
-        choices=YEAR_IN_SCHOOL_CHOICES,
+        choices=CLASS_IN_SCHOOL_CHOICES,
         default=oneA,
     )
 
-    def is_upperclass(self):
-        return self.group_class in {self.oneB, self.oneC}
+    # def is_upperclass(self):
+    #     return self.group_class in {self.oneB, self.oneC}
 
     def __str__(self):
         return self.title

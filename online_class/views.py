@@ -1,4 +1,4 @@
-from django.http import request
+from django.http import request, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views.generic import FormView
@@ -16,8 +16,10 @@ def main_page(request):
 
 @login_required
 def dashboard(request):
+    announcement = Announcement.objects.filter(created_date__year=2021)
     context = {
-        "welcome": "Welcome to your classroom"
+        "welcome": "Welcome to your classroom",
+        "announcement": announcement
     }
     return render(request, 'authapp/dashboard.html', context=context)
 
@@ -108,10 +110,6 @@ class TopicCreateView(generic.CreateView):
     template_name = 'topics/create-topics.html'
     success_url = reverse_lazy('online_class:topics')
 
-    def form_valid(self, form):
-        form.instance.course_id = self.request.user
-        return super(TopicCreateView, self).form_valid(form)
-
 
 class TopicUpdateView(generic.UpdateView):
     model = Topic
@@ -128,6 +126,7 @@ class TopicDeleteView(generic.DeleteView):
     template_name = 'topics/topic_confirm_delete.html'
     success_url = reverse_lazy('online_class:topics')
 
+
 #ANNOUNCEMENT
 class AnnouncementListView(generic.ListView):
     model = Announcement
@@ -135,6 +134,19 @@ class AnnouncementListView(generic.ListView):
     context_object_name = 'announcement'
 
 class AnnouncementCreateView(generic.CreateView):
+    model = Announcement
     form_class = AnnouncementForm
     template_name = 'announcement/create-announcement.html'
-    success_url = reverse_lazy('online_class:announcements.html')
+    success_url = reverse_lazy('online_class:announcement')
+
+class AnnouncementUpdateView(generic.UpdateView):
+    model = Announcement
+    form_class = AnnouncementForm
+    template_name = 'announcement/update-announcement.html'
+    success_url = reverse_lazy('online_class:announcement')
+
+    # def get_success_url(self):
+    #     return reverse_lazy('online_class:announcement')
+
+
+
